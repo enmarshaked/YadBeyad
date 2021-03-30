@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShoppingScreen1">
+    tools:context=".MedicineScreen1">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#26A69A"
+        android:background="#EF5350"
         android:orientation="vertical">
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/rubik_bold"
             android:gravity="center"
-            android:text="קניות"
+            android:text="רפואה"
             android:textColor="#FFFFFF"
             android:textSize="50sp" />
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="30dp"
             android:paddingBottom="30dp"
-            app:srcCompat="@drawable/shoppingwhite" />
+            app:srcCompat="@drawable/medicinewhite" />
 
         <Button
             android:id="@+id/recBtn"
@@ -47,16 +47,17 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:text="הקלט בקשה"
-            android:textColor="#26A69A"
+            android:textColor="#000000"
             android:textSize="46sp"
             app:backgroundTint="#FFFFFF" />
+
         <Button
             android:id="@+id/typeBtn"
             android:layout_width="400dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:text="הקלד בקשה"
-            android:textColor="#26A69A"
+            android:textColor="#000000"
             android:textSize="46sp"
             app:backgroundTint="#FFFFFF" />
     </LinearLayout>

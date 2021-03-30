@@ -57,7 +57,7 @@
                 android:text="תחזוקה"
                 android:textColor="#FFFFFF"
                 android:textSize="42sp"
-                app:backgroundTint="FFFFC928" />
+                app:backgroundTint="#FFC928" />
 
             <Button
                 android:id="@+id/MedicineBtn"
