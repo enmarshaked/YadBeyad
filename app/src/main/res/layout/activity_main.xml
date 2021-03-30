@@ -37,7 +37,6 @@
             android:background="#26A69A"
             android:backgroundTint="#26A69A"
             android:drawableTop="@drawable/shopping"
-            android:drawableColor="#FFFFFF"
             android:fontFamily="@font/rubik_bold"
             android:text="קניות"
             android:textColor="#FFFFFF"
