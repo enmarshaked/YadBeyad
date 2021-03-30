@@ -25,6 +25,7 @@
             android:layout_height="72dp"
             android:fontFamily="@font/rubik"
             android:paddingTop="20dp"
+            android:paddingRight="20dp"
             android:text="אני אשמח לעזרה ב..."
             android:textSize="30sp" />
 
@@ -36,8 +37,7 @@
             android:layout_marginBottom="10dp"
             android:background="#26A69A"
             android:backgroundTint="#26A69A"
-            android:drawableTop="@drawable/shopping"
-            android:drawableColor="#FFFFFF"
+            android:drawableTop="@drawable/shoppingwhite"
             android:fontFamily="@font/rubik_bold"
             android:text="קניות"
             android:textColor="#FFFFFF"
@@ -52,8 +52,9 @@
             android:layout_marginBottom="10dp"
             android:background="#FFCA28"
             android:backgroundTint="#FFCA28"
+            android:drawableTop="@drawable/maintenancewhite"
             android:fontFamily="@font/rubik_bold"
-            android:text="\nתחזוקה"
+            android:text="תחזוקה"
             android:textColor="#FFFFFF"
             android:textSize="42sp"
             app:backgroundTint="#FFCA28" />
@@ -65,8 +66,9 @@
             android:layout_marginBottom="10dp"
             android:background="#EF5350"
             android:backgroundTint="#EF5350"
+            android:drawableTop="@drawable/medicinewhite"
             android:fontFamily="@font/rubik_bold"
-            android:text="\nרפואה"
+            android:text="רפואה"
             android:textColor="#FFFFFF"
             android:textSize="42sp"
             app:backgroundTint="#EF5350" />
@@ -78,8 +80,9 @@
             android:layout_marginBottom="10dp"
             android:background="#7E57C2"
             android:backgroundTint="#7E57C2"
+            android:drawableTop="@drawable/computerwhite"
             android:fontFamily="@font/rubik_bold"
-            android:text="\nטכנולוגיה"
+            android:text="טכנולוגיה"
             android:textColor="#FFFFFF"
             android:textSize="42sp"
             app:backgroundTint="#7E57C2" />
@@ -91,8 +94,9 @@
             android:layout_marginBottom="10dp"
             android:background="#26C6DA"
             android:backgroundTint="#26C6DA"
+            android:drawableTop="@drawable/plant_pot"
             android:fontFamily="@font/rubik_bold"
-            android:text="\nאחר"
+            android:text="אחר"
             android:textColor="#FFFFFF"
             android:textSize="42sp"
             app:backgroundTint="#26C6DA" />
