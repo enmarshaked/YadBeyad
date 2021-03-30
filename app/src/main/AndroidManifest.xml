@@ -15,7 +15,7 @@
         <activity android:name=".TechnologuScreen1" />
         <activity android:name=".MedicineScreen1" />
         <activity android:name=".MaintainenceScreen1" />
-        <activity android:name=".ShoppingScreen1" />
+        <activity android:name=".ShoppingScreen1"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
