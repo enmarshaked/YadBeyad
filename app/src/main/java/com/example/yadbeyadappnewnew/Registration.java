@@ -17,12 +17,15 @@ public class Registration extends AppCompatActivity {
         finished.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText name = (EditText) findViewById(R.id.name);
-                EditText phone = (EditText) findViewById(R.id.phoneNumber);
-                EditText address = (EditText) findViewById(R.id.address);
-                EditText city = (EditText) findViewById(R.id.city);
+                EditText nameEdit = (EditText) findViewById(R.id.name);
+                EditText phoneEdit = (EditText) findViewById(R.id.phoneNumber);
+                EditText addressEdit = (EditText) findViewById(R.id.address);
+                EditText cityEdit = (EditText) findViewById(R.id.city);
+                String name = nameEdit.getText().toString();
+                String phone = phoneEdit.getText().toString();
+                String address = addressEdit.getText().toString();
+                String city = cityEdit.getText().toString();
             }
         });
-
     }
 }
