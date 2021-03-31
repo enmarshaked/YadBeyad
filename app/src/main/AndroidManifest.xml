@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yadbeyadappnewnew">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,28 +12,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YadBeyadAppNewNew">
-        <activity android:name=".EndingScreen"></activity>
-        <activity android:name=".recordRequest" />
-        <activity android:name=".typeRequest" >
+        <activity android:name=".Registration">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".OtherRequestScreen1"/>
+        <activity android:name=".EndingScreen"/>
+        <activity android:name=".recordRequest" />
+        <activity android:name=".typeRequest"></activity>
+        <activity android:name=".OtherRequestScreen1" />
         <activity android:name=".TechnologuScreen1" />
         <activity android:name=".MedicineScreen1" />
         <activity android:name=".MaintainenceScreen1" />
         <activity android:name=".ShoppingScreen1" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
 
 </manifest>
