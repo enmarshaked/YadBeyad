@@ -22,7 +22,6 @@ public class recordRequest extends AppCompatActivity {
 
             }
         });
-
-
     }
 }
+
