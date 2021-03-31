@@ -28,7 +28,7 @@
             android:layout_width="289dp"
             android:layout_height="248dp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             app:srcCompat="@drawable/holdinghands" />
 
         <Button
@@ -37,7 +37,7 @@
             android:layout_height="122dp"
             android:fontFamily="@font/rubik_bold"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="5dp"
             android:text="לחץ כאן לחזרה למסך הראשי"
             android:textSize="30sp"
             app:backgroundTint="#EA8686" />

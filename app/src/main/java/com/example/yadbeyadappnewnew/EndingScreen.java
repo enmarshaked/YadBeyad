@@ -18,9 +18,13 @@ public class EndingScreen extends AppCompatActivity {
         backToMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(getBaseContext(), )
+                gotoMainScreen();
             }
         });
 
+    }
+    public void gotoMainScreen(){
+        Intent intent = new Intent(getBaseContext(), MainActivity.class);
+        startActivity(intent);
     }
 }

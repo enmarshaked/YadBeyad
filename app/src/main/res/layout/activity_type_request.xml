@@ -26,13 +26,13 @@
         <EditText
             android:id="@+id/requestDescription"
             android:layout_width="294dp"
-            android:layout_height="342dp"
+            android:layout_height="300dp"
             android:ems="10"
             android:gravity="start|top"
             android:hint="כתבו לנו במה נוכל לעזור..."
             android:inputType="textMultiLine"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:singleLine="false"
             android:textColor="#020202"
             android:textSize="24sp"
@@ -41,11 +41,11 @@
         <Button
             android:id="@+id/send"
             android:layout_width="273dp"
-            android:layout_height="112dp"
+            android:layout_height="95dp"
             android:fontFamily="@font/rubik_bold"
             android:text="שליחה"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:textSize="36sp"
             app:backgroundTint="#26A69A" />
     </LinearLayout>

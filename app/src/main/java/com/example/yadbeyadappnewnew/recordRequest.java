@@ -42,15 +42,15 @@ public class recordRequest extends AppCompatActivity {
 
         startRecBtn = (Button) findViewById(R.id.recordButton);
         sendRecBtn = (Button) findViewById(R.id.send);
+        sendRecBtn.setEnabled(false);
 
-        sendRecBtn.setClickable(false);
         startRecBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (checkPermission()) {
                     AudioFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" +
                                     CreateRandomAudioFileName(5) + "AudioRecording.3gp";
-                    System.out.println("The path is: " + AudioFilePath);
+                  //  System.out.println("The path is: " + AudioFilePath);
                     MediaRecorderReady();
 
                     try {
@@ -66,9 +66,9 @@ public class recordRequest extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
-//
-//                    Toast.makeText(recordRequest.this, "Recording started",
-//                            Toast.LENGTH_LONG).show();
+
+                    Toast.makeText(recordRequest.this, "Recording started",
+                            Toast.LENGTH_LONG).show();
                 } else {
                     requestPermission();
                 }
@@ -80,8 +80,8 @@ public class recordRequest extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 myAudioRecorder.stop();
-                sendRecBtn.setClickable(false);
-                startRecBtn.setClickable(true);
+                sendRecBtn.setEnabled(false);
+                startRecBtn.setEnabled(false);
 
                 Toast.makeText(recordRequest.this, "Recording Completed",
                         Toast.LENGTH_LONG).show();
@@ -89,13 +89,13 @@ public class recordRequest extends AppCompatActivity {
         });
         }
 
-        public void MediaRecorderReady(){
-            myAudioRecorder= new MediaRecorder();
-            myAudioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-            myAudioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-            myAudioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
-            myAudioRecorder.setOutputFile(AudioFilePath);
-        }
+    public void MediaRecorderReady(){
+        myAudioRecorder= new MediaRecorder();
+        myAudioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        myAudioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        myAudioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
+        myAudioRecorder.setOutputFile(AudioFilePath);
+    }
 
 
     public String CreateRandomAudioFileName(int string){
