@@ -6,30 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".EndingScreen">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/rubik_bold"
-        android:gravity="center"
-        android:text="אחד המתנדבים יצור איתך קשר בהקדם"
-        android:textColor="#EA8686"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="33dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/backToMain"
-        android:layout_width="283dp"
-        android:layout_height="122dp"
-        android:fontFamily="@font/rubik_bold"
-        android:text="לחץ כאן לחזרה למסך הראשי"
-        android:textSize="30sp"
-        app:backgroundTint="#EA8686"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="542dp" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="אחד המתנדבים יצור איתך קשר בהקדם"
+            android:textColor="#EA8686"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="289dp"
+            android:layout_height="248dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/holdinghands" />
+
+        <Button
+            android:id="@+id/backToMain"
+            android:layout_width="283dp"
+            android:layout_height="122dp"
+            android:fontFamily="@font/rubik_bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="לחץ כאן לחזרה למסך הראשי"
+            android:textSize="30sp"
+            app:backgroundTint="#EA8686" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

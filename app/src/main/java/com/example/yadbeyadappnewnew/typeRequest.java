@@ -22,7 +22,6 @@ public class typeRequest extends AppCompatActivity {
             public void onClick(View v) {
                 EditText requestDescriptionEdit = (EditText) findViewById(R.id.requestDescription);
                 String requestDescription = requestDescriptionEdit.getText().toString();
-
             }
         });
     }
