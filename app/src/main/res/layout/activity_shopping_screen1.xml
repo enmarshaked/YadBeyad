@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingScreen1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#26A69A"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="אני אשמח לעזרה ב...."
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="קניות"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:srcCompat="@drawable/shoppingwhite" />
+
+        <Button
+            android:id="@+id/recBtn"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="הקלט בקשה"
+            android:textColor="#26A69A"
+            android:textSize="30sp"
+            app:backgroundTint="#FFFFFF" />
+        <Button
+            android:id="@+id/typeBtn"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="הקלד בקשה"
+            android:textColor="#26A69A"
+            android:textSize="30sp"
+            app:backgroundTint="#FFFFFF" />
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="ביטול"
+            android:textColor="#26A69A"
+            android:textSize="30sp"
+            app:backgroundTint="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
