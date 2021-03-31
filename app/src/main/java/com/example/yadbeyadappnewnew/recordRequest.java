@@ -12,6 +12,8 @@ import android.widget.Toast;
 import com.example.yadbeyadappnewnew.R;
 
 import java.io.IOException;
+import android.content.Intent;
+import android.view.View;
 
 public class recordRequest extends AppCompatActivity {
     private Button play, stop, record;
