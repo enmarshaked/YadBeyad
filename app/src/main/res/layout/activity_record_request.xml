@@ -40,7 +40,7 @@
             android:layout_width="260dp"
             android:layout_height="278dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:drawableBottom="@drawable/rec"
             android:text="Button"
             app:backgroundTint="#FFFFFF" />
@@ -51,7 +51,7 @@
             android:layout_height="112dp"
             android:fontFamily="@font/rubik_bold"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="שליחה"
             android:textSize="36sp"
             app:backgroundTint="#26A69A" />

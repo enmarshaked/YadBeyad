@@ -16,25 +16,19 @@
         <activity android:name=".OtherRequestScreen1"/>
         <activity android:name=".TechnologuScreen1" />
         <activity android:name=".MedicineScreen1" />
-<<<<<<< HEAD
         <activity android:name=".MaintainenceScreen1" />
         <activity android:name=".ShoppingScreen1" />
-=======
-        <activity android:name=".MaintainenceScreen1"/>
-        <activity android:name=".ShoppingScreen1">
-        </activity>
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
->>>>>>> d750fa766b4abe23af72fe0a762946e4d9dfc71f
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
 </manifest>
