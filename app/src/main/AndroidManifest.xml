@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YadBeyadAppNewNew">
+        <activity android:name=".EndingScreen"></activity>
         <activity android:name=".recordRequest" />
         <activity android:name=".typeRequest" >
         </activity>
@@ -18,6 +19,7 @@
         <activity android:name=".MaintainenceScreen1"/>
         <activity android:name=".ShoppingScreen1">
         </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

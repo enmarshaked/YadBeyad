@@ -8,26 +8,21 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button Shoppingbutton;
-    private Button maintainenceButton;
-    private Button medicineButton;
-    private Button technologyButton;
-    private Button otherButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Shoppingbutton = (Button) findViewById(R.id.ShoppingBtn);
-        Shoppingbutton.setOnClickListener(new View.OnClickListener() {
+        Button shoppingbutton = (Button) findViewById(R.id.ShoppingBtn);
+        shoppingbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openShoppingScreen();
             }
         });
 
-        maintainenceButton = (Button) findViewById(R.id.MaintainenceBtn);
+        Button maintainenceButton = (Button) findViewById(R.id.MaintainenceBtn);
         maintainenceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        medicineButton = (Button) findViewById(R.id.MedicineBtn);
+        Button medicineButton = (Button) findViewById(R.id.MedicineBtn);
         medicineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        technologyButton = (Button) findViewById(R.id.technologyBtn);
+        Button technologyButton = (Button) findViewById(R.id.technologyBtn);
         technologyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        otherButton = (Button) findViewById(R.id.otherBtn);
+        Button otherButton = (Button) findViewById(R.id.otherBtn);
         otherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,26 +56,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openShoppingScreen(){
-        Intent intent = new Intent(this, ShoppingScreen1.class);
+        Intent intent = new Intent(MainActivity.this, ShoppingScreen1.class);
         startActivity(intent);
     }
 
     public void openMaintainenceScreen(){
-        Intent intent = new Intent(this, MaintainenceScreen1.class);
+        Intent intent = new Intent(MainActivity.this, MaintainenceScreen1.class);
         startActivity(intent);
     }
     public void openMedicineScreen(){
-        Intent intent = new Intent(this, MedicineScreen1.class);
+        Intent intent = new Intent(MainActivity.this, MedicineScreen1.class);
         startActivity(intent);
     }
 
     public void openTechnologyScreen(){
-        Intent intent = new Intent(this, TechnologuScreen1.class);
+        Intent intent = new Intent(MainActivity.this, TechnologuScreen1.class);
         startActivity(intent);
     }
 
     public void openOtherScreen(){
-        Intent intent = new Intent(this, OtherRequestScreen1.class);
+        Intent intent = new Intent(MainActivity.this, OtherRequestScreen1.class);
         startActivity(intent);
     }
 

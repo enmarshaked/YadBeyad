@@ -16,8 +16,8 @@ public class typeRequest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_type_request);
 
-        Button finished = (Button) findViewById(R.id.finished);
-        finished.setOnClickListener(new View.OnClickListener() {
+        Button sendBtn = (Button) findViewById(R.id.send);
+        sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 EditText requestDescriptionEdit = (EditText) findViewById(R.id.requestDescription);
